@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  background: rgb(11, 10, 43);
+  width: 100vw;
+  height: max(calc(12vh - 44px), 44px);
+}
+
+@media only screen and (max-width: 700px){
+  body {
+    background: blue;
+  }
+}
+
+section:first-of-type {
+  margin-top: 100vh;
+}
