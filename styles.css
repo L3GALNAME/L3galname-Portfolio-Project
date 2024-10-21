@@ -19,6 +19,7 @@ body {
   display: flex;
   place-items: center;
   justify-content: center;
+  z-index: 1;
 }
 
 #navbar a {
@@ -42,10 +43,11 @@ body {
   width: 100%;
   font-size: 62.5%;
   text-align: center;
+  
 }
 
 .main-content > .main-section {
-  background: linear-gradient(360deg, #0B0A2B85, #0A084A85);
+  background: linear-gradient(180deg, #0B0A2B85, #0A084A85);
   border: 2px solid #229C9CDB;
   border-bottom: none;
   border-radius: 1.25rem;
@@ -53,6 +55,8 @@ body {
   /*margin: 0 calc((100% - max(calc(100% - 64vw), 260px)) / 2);*/
   padding: 5em 2vw;
   width: max(calc(100% - 64vw), 260px);
+  filter: drop-shadow(0px 2rem 1rem rgb(0, 22, 31));
+  backdrop-filter: blur(10px);
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -63,20 +67,20 @@ body {
 
 h1 {
   font-size: max(3.5vw, 2.4rem);
-  text-shadow: 0px 0.5rem 90px rgba(253, 255, 224, 0.4);
+  text-shadow: 0px 0.5rem 6rem rgba(253, 255, 224, 0.4);
 }
 
 h2 {
   font-family: 'Lexend Deca', sans-serif;
   font-size: max(2.5vw, 2.4rem);
-  text-shadow: 0.12rem 0.12rem 5px rgba(238, 255, 224, 0.55);
+  text-shadow: 0.12rem 0.12rem 0.5rem rgba(238, 255, 224, 0.55);
 }
 
 p {
   color: rgba(253, 255, 224, 0.7);
   font-size: max(0.9vw, 0.75rem);
   line-height: 1.75em;
-  text-shadow: 0px 0.25rem 20px rgba(253, 255, 224, 0.45);
+  text-shadow: 0px 0.25rem 1rem rgba(253, 255, 224, 0.45);
   margin: 2em 0;
 }
 
