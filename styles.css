@@ -51,10 +51,10 @@ body {
   border: 2px solid #229C9CDB;
   border-bottom: none;
   border-radius: 1.25rem;
-  margin: max(4vw, 3.5em) calc((100% - max(calc(100% - 64vw), 260px)) / 2);
+  margin: max(4vw, 3.5em) calc((100% - max(calc(100% - 64vw), 300px)) / 2);
   /*margin: 0 calc((100% - max(calc(100% - 64vw), 260px)) / 2);*/
-  padding: 5em 2vw;
-  width: max(calc(100% - 64vw), 260px);
+  padding: 5em 2vw 4em;
+  width: max(calc(100% - 64vw), 300px);
   filter: drop-shadow(0px 2rem 1rem rgb(0, 22, 31));
   backdrop-filter: blur(10px);
   box-sizing: border-box;
@@ -88,6 +88,44 @@ p {
   color: rgba(253, 255, 224, 0.25);
   font-size: max(0.45vw, 0.375rem);
   text-shadow: 0px 0.25rem 30px rgba(253, 255, 224, 0.45);
+}
+
+/*Icons*/
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: max(3vw, 3rem);
+  margin: max(2.5vw, 1.5rem) 0;
+}
+
+.icons > a, .icons > a > .material-icons{
+  font-size: max(1.5vw, 1.5rem);
+  color: rgb(230, 179, 90);
+}
+
+i {
+  background: rgba(230, 179, 90, 0.2);
+  border-radius: 50%;
+  /*padding: 0.5rem;*/
+  padding: max(0.5vw, 0.5rem);
+  margin: max(0.65vw, 0.4rem);
+  transition: font-size 250ms, background 250ms;
+  padding: max(0.65vw, 0.65rem);
+}
+
+.icons > a > #mail:hover {
+  font-size: max(2vw, 2rem);
+  background: rgba(13, 148, 83, 0.9);
+}
+.icons > a > #discord:hover {
+  font-size: max(2vw, 2rem);
+  background: rgba(112, 90, 237, 0.9);
+}
+.icons > a > #birdApp:hover {
+  font-size: max(2vw, 2rem);
+  background: rgba(17, 159, 191, 0.9);
 }
 
 /* THIS WILL COME LAST */
@@ -142,4 +180,12 @@ p {
   background-size: 300px 160px; /* Match the size of the original SVG */
   background-position: -100px -40px; /* Half of the width and height for a diagonal staggered effect */
   /*filter: hue-rotate(90deg); /* Adjust the hue rotation */
+}
+
+#icon {
+  border: 5px solid rgba(253, 255, 224, 0.95);
+  border-radius: 50%;
+  box-shadow: 0px 0.375rem 2rem rgba(253, 255, 224, 0.4);
+  width: max(6vw, 7em);
+  margin-bottom: max(-2vw, -3em);
 }
